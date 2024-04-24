@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>School Assignment</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- font-awesome icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-5" href="#">
+        <svg width="132" height="41" viewBox="0 0 132 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.8544 32L0.5904 10.5488H4.4936L6.3632 21.3728C6.53813 22.5099 6.71307 23.6579 6.888 24.8168C7.0848 25.9539 7.25973 27.0909 7.4128 28.228H7.544C7.78453 27.0909 8.01413 25.9539 8.2328 24.8168C8.47333 23.6579 8.71387 22.5099 8.9544 21.3728L11.5784 10.5488H14.8912L17.5152 21.3728C17.7557 22.488 17.9963 23.6251 18.2368 24.784C18.4773 25.9211 18.7179 27.0691 18.9584 28.228H19.0896C19.2645 27.0691 19.4395 25.9211 19.6144 24.784C19.7893 23.6469 19.9533 22.5099 20.1064 21.3728L21.976 10.5488H25.6168L21.5168 32H16.7936L14.1368 20.7168C13.9619 19.8859 13.7869 19.0549 13.612 18.224C13.4589 17.3931 13.3168 16.5731 13.1856 15.764H13.0544C12.9013 16.5731 12.7373 17.3931 12.5624 18.224C12.4093 19.0549 12.2453 19.8859 12.0704 20.7168L9.4792 32H4.8544ZM28.628 32V15.8952H32.4V32H28.628ZM30.5304 13.0744C29.8525 13.0744 29.3059 12.8776 28.8904 12.484C28.4749 12.0904 28.2672 11.5656 28.2672 10.9096C28.2672 10.2755 28.4749 9.7616 28.8904 9.368C29.3059 8.9744 29.8525 8.7776 30.5304 8.7776C31.2083 8.7776 31.7549 8.9744 32.1704 9.368C32.5859 9.7616 32.7936 10.2755 32.7936 10.9096C32.7936 11.5656 32.5859 12.0904 32.1704 12.484C31.7549 12.8776 31.2083 13.0744 30.5304 13.0744ZM43.8052 32.3936C42.362 32.3936 40.9625 32.1203 39.6068 31.5736C38.2729 31.0269 37.0921 30.2507 36.0644 29.2448L38.2948 26.6536C39.0601 27.3752 39.9348 27.9656 40.9188 28.4248C41.9028 28.8621 42.8868 29.0808 43.8708 29.0808C45.0953 29.0808 46.0246 28.8293 46.6588 28.3264C47.2929 27.8235 47.61 27.1565 47.61 26.3256C47.61 25.4291 47.2929 24.784 46.6588 24.3904C46.0465 23.9968 45.2593 23.5923 44.2972 23.1768L41.3452 21.8976C40.6454 21.5915 39.9566 21.1979 39.2788 20.7168C38.6228 20.2357 38.0761 19.6235 37.6388 18.88C37.2233 18.1365 37.0156 17.24 37.0156 16.1904C37.0156 15.0533 37.3217 14.0365 37.934 13.14C38.5681 12.2216 39.4209 11.5 40.4924 10.9752C41.5857 10.4285 42.8321 10.1552 44.2316 10.1552C45.478 10.1552 46.6806 10.4067 47.8396 10.9096C48.9985 11.3907 49.9934 12.0467 50.8244 12.8776L48.8892 15.3048C48.2113 14.7363 47.4897 14.288 46.7244 13.96C45.9809 13.632 45.15 13.468 44.2316 13.468C43.2257 13.468 42.4057 13.6976 41.7716 14.1568C41.1593 14.5941 40.8532 15.2064 40.8532 15.9936C40.8532 16.5403 41.0062 16.9995 41.3124 17.3712C41.6404 17.7211 42.0668 18.0272 42.5916 18.2896C43.1164 18.5301 43.674 18.7707 44.2644 19.0112L47.1836 20.2248C48.4518 20.7715 49.4905 21.4931 50.2996 22.3896C51.1086 23.2643 51.5132 24.4779 51.5132 26.0304C51.5132 27.1893 51.207 28.2499 50.5948 29.212C49.9825 30.1741 49.0969 30.9504 47.938 31.5408C46.8009 32.1093 45.4233 32.3936 43.8052 32.3936ZM61.8098 32.3936C60.3447 32.3936 59.0218 32.0656 57.841 31.4096C56.6821 30.7317 55.7527 29.7696 55.053 28.5232C54.3751 27.2549 54.0362 25.7352 54.0362 23.964C54.0362 22.1709 54.4079 20.6512 55.1514 19.4048C55.8949 18.1365 56.8789 17.1744 58.1034 16.5184C59.3498 15.8405 60.6837 15.5016 62.105 15.5016C63.1327 15.5016 64.0293 15.6765 64.7946 16.0264C65.5599 16.3763 66.2378 16.8027 66.8282 17.3056L64.9914 19.7656C64.5759 19.3939 64.1495 19.1096 63.7122 18.9128C63.2749 18.6941 62.8047 18.5848 62.3018 18.5848C61.0117 18.5848 59.9511 19.0768 59.1202 20.0608C58.3111 21.0448 57.9066 22.3459 57.9066 23.964C57.9066 25.5603 58.3002 26.8504 59.0874 27.8344C59.8965 28.8184 60.9351 29.3104 62.2034 29.3104C62.8375 29.3104 63.4279 29.1792 63.9746 28.9168C64.5431 28.6325 65.057 28.3045 65.5162 27.9328L67.0578 30.4256C66.3143 31.0816 65.4834 31.5736 64.565 31.9016C63.6466 32.2296 62.7282 32.3936 61.8098 32.3936ZM70.2366 32V8.8432H74.0086V14.8128L73.8774 17.9288C74.5553 17.2947 75.3097 16.7371 76.1406 16.256C76.9715 15.7531 77.9337 15.5016 79.027 15.5016C80.7545 15.5016 82.0118 16.0592 82.799 17.1744C83.5862 18.2896 83.9798 19.864 83.9798 21.8976V32H80.2078V22.3896C80.2078 21.0557 80.011 20.1155 79.6174 19.5688C79.2238 19.0221 78.5787 18.7488 77.6822 18.7488C76.9825 18.7488 76.3593 18.9237 75.8126 19.2736C75.2878 19.6016 74.6865 20.0936 74.0086 20.7496V32H70.2366ZM95.1192 32.3936C93.7854 32.3936 92.539 32.0656 91.38 31.4096C90.2211 30.7317 89.2808 29.7696 88.5592 28.5232C87.8376 27.2549 87.4768 25.7352 87.4768 23.964C87.4768 22.1709 87.8376 20.6512 88.5592 19.4048C89.2808 18.1365 90.2211 17.1744 91.38 16.5184C92.539 15.8405 93.7854 15.5016 95.1192 15.5016C96.475 15.5016 97.7323 15.8405 98.8912 16.5184C100.05 17.1744 100.99 18.1365 101.712 19.4048C102.434 20.6512 102.794 22.1709 102.794 23.964C102.794 25.7352 102.434 27.2549 101.712 28.5232C100.99 29.7696 100.05 30.7317 98.8912 31.4096C97.7323 32.0656 96.475 32.3936 95.1192 32.3936ZM95.1192 29.3104C96.3 29.3104 97.2294 28.8184 97.9072 27.8344C98.5851 26.8504 98.924 25.5603 98.924 23.964C98.924 22.3459 98.5851 21.0448 97.9072 20.0608C97.2294 19.0768 96.3 18.5848 95.1192 18.5848C93.9384 18.5848 93.0091 19.0768 92.3312 20.0608C91.6752 21.0448 91.3472 22.3459 91.3472 23.964C91.3472 25.5603 91.6752 26.8504 92.3312 27.8344C93.0091 28.8184 93.9384 29.3104 95.1192 29.3104ZM113.121 32.3936C111.787 32.3936 110.541 32.0656 109.382 31.4096C108.223 30.7317 107.282 29.7696 106.561 28.5232C105.839 27.2549 105.478 25.7352 105.478 23.964C105.478 22.1709 105.839 20.6512 106.561 19.4048C107.282 18.1365 108.223 17.1744 109.382 16.5184C110.541 15.8405 111.787 15.5016 113.121 15.5016C114.477 15.5016 115.734 15.8405 116.893 16.5184C118.052 17.1744 118.992 18.1365 119.714 19.4048C120.435 20.6512 120.796 22.1709 120.796 23.964C120.796 25.7352 120.435 27.2549 119.714 28.5232C118.992 29.7696 118.052 30.7317 116.893 31.4096C115.734 32.0656 114.477 32.3936 113.121 32.3936ZM113.121 29.3104C114.302 29.3104 115.231 28.8184 115.909 27.8344C116.587 26.8504 116.926 25.5603 116.926 23.964C116.926 22.3459 116.587 21.0448 115.909 20.0608C115.231 19.0768 114.302 18.5848 113.121 18.5848C111.94 18.5848 111.011 19.0768 110.333 20.0608C109.677 21.0448 109.349 22.3459 109.349 23.964C109.349 25.5603 109.677 26.8504 110.333 27.8344C111.011 28.8184 111.94 29.3104 113.121 29.3104ZM128.203 32.3936C126.869 32.3936 125.918 31.9891 125.35 31.18C124.803 30.3709 124.53 29.2667 124.53 27.8672V8.8432H128.302V28.064C128.302 28.5232 128.389 28.8512 128.564 29.048C128.739 29.2229 128.925 29.3104 129.122 29.3104C129.209 29.3104 129.286 29.3104 129.351 29.3104C129.439 29.2885 129.559 29.2667 129.712 29.2448L130.204 32.0656C129.985 32.1531 129.701 32.2296 129.351 32.2952C129.023 32.3608 128.64 32.3936 128.203 32.3936Z"
+            fill="black" />
+          <circle cx="95" cy="10" r="3" fill="#09B451" />
+          <circle cx="113" cy="10" r="3" fill="#09B451" />
+        </svg>
+      </a>
+      <button class="navbar-toggler border-0 focus-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="mb-2 navbar-collapse ms-auto justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Instructors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Schedules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form>
+          <a class="text-dark me-3" type="submit">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 16C9.77498 15.9996 11.4988 15.4054 12.897 14.312L17.293 18.708L18.707 17.294L14.311 12.898C15.405 11.4997 15.9996 9.77544 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16ZM8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8C2 4.691 4.691 2 8 2Z"
+                fill="#6A0000" />
+            </svg>
+          </a>
+          <button class="btn text-color me-3 focus-none" type="submit">
+            <strong>Login</strong>
+          </button>
+          <button class="btn btn-color text-light me-5 focus-none" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+  <!-- hero sec -->
+  <section class="banner-sec">
+    <div class="container">
+      <div class="bg-hero-sec">
+        <div class="row">
+          <div class="col-lg-5 d-flex align-items-center">
+            <div class="p-4">
+              <h1 class="display-4 fw-bold">
+                Quality <span class="text-color">Education</span> By Any
+                Means Necessary.
+              </h1>
+              <button class="btn btn-color text-light my-4">Get Started</button>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="img-sec pt-4">
+              <img src="./images/banner-team.svg" alt="banner" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero sec end -->
+  <!-- icons sec -->
+  <section id="icons">
+    <div class="container mb-5">
+      <div class="row m-auto d-flex justify-content-between mt-5">
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="card mini-card rounded d-flex flex-row pt-2 mb-3">
+            <span class="ps-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#09B451" />
+                <path
+                  d="M28.25 14.25H11.75C11.1977 14.25 10.75 14.6977 10.75 15.25V24.75C10.75 25.3023 11.1977 25.75 11.75 25.75H28.25C28.8023 25.75 29.25 25.3023 29.25 24.75V15.25C29.25 14.6977 28.8023 14.25 28.25 14.25Z"
+                  stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M25.75 28.25V11.75C25.75 11.1977 25.3023 10.75 24.75 10.75H15.25C14.6977 10.75 14.25 11.1977 14.25 11.75L14.25 28.25C14.25 28.8023 14.6977 29.25 15.25 29.25H24.75C25.3023 29.25 25.75 28.8023 25.75 28.25Z"
+                  stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M23.065 18.985L20.595 22.26M23.065 22.26L20.595 18.985M23.725 17.5H19.67L17.73 22.5L16.275 18.985"
+                  stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <p class="pt-2 ps-2">Problem solving</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="card mini-card rounded d-flex flex-row pt-2 mb-3">
+            <span class="ps-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#09B451" />
+                <path
+                  d="M22 27C25.771 27 27.657 27 28.828 25.828C30 24.657 30 22.771 30 19C30 15.229 30 13.343 28.828 12.172C27.657 11 25.771 11 22 11H18C14.229 11 12.343 11 11.172 12.172C10 13.343 10 15.229 10 19C10 22.771 10 24.657 11.172 25.828C11.825 26.482 12.7 26.771 14 26.898"
+                  stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20 19V19.01M16 19V19.01M24 19V19.01M22 27C20.764 27 19.402 27.5 18.159 28.145C16.161 29.182 15.162 29.701 14.67 29.37C14.178 29.04 14.271 28.015 14.458 25.966L14.5 25.5"
+                  stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+            <p class="pt-2 ps-2">Live chat</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="card mini-card rounded d-flex flex-row pt-2 mb-3">
+            <span class="ps-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#09B451" />
+                <path
+                  d="M17 11C15.6739 11 14.4021 11.5268 13.4645 12.4645C12.5268 13.4021 12 14.6739 12 16C12 17.3261 12.5268 18.5979 13.4645 19.5355C14.4021 20.4732 15.6739 21 17 21C18.3261 21 19.5979 20.4732 20.5355 19.5355C21.4732 18.5979 22 17.3261 22 16C22 14.6739 21.4732 13.4021 20.5355 12.4645C19.5979 11.5268 18.3261 11 17 11ZM14 16C14 15.2044 14.3161 14.4413 14.8787 13.8787C15.4413 13.3161 16.2044 13 17 13C17.7956 13 18.5587 13.3161 19.1213 13.8787C19.6839 14.4413 20 15.2044 20 16C20 16.7956 19.6839 17.5587 19.1213 18.1213C18.5587 18.6839 17.7956 19 17 19C16.2044 19 15.4413 18.6839 14.8787 18.1213C14.3161 17.5587 14 16.7956 14 16ZM24.908 16.218C24.6268 16.0747 24.3156 16 24 16V14C24.6315 14 25.2541 14.1496 25.8167 14.4365C26.3793 14.7233 26.866 15.1393 27.2369 15.6504C27.6079 16.1615 27.8526 16.7532 27.9509 17.377C28.0493 18.0008 27.9985 18.639 27.8028 19.2395C27.6072 19.8399 27.2721 20.3855 26.825 20.8316C26.378 21.2776 25.8317 21.6115 25.2308 21.8058C24.6299 22.0002 23.9916 22.0495 23.368 21.9498C22.7444 21.8501 22.1533 21.6041 21.643 21.232L22.821 19.616C23.044 19.7783 23.2982 19.8927 23.5676 19.9521C23.837 20.0114 24.1157 20.0144 24.3863 19.9609C24.6569 19.9073 24.9134 19.7983 25.1399 19.6408C25.3663 19.4833 25.5578 19.2807 25.7021 19.0456C25.8465 18.8106 25.9407 18.5482 25.9787 18.275C26.0168 18.0018 25.998 17.7237 25.9234 17.4582C25.8488 17.1926 25.7201 16.9453 25.5454 16.7319C25.3706 16.5185 25.1536 16.3435 24.908 16.218ZM27.998 29C27.9977 27.9397 27.5764 26.923 26.8267 26.1733C26.077 25.4236 25.0603 25.0023 24 25.002V23C25.5912 23.0003 27.1172 23.6325 28.2423 24.7577C29.3675 25.8828 29.9997 27.4088 30 29H27.998ZM24 29H22C22 27.6739 21.4732 26.4021 20.5355 25.4645C19.5979 24.5268 18.3261 24 17 24C15.6739 24 14.4021 24.5268 13.4645 25.4645C12.5268 26.4021 12 27.6739 12 29H10C10 27.1435 10.7375 25.363 12.0503 24.0503C13.363 22.7375 15.1435 22 17 22C18.8565 22 20.637 22.7375 21.9497 24.0503C23.2625 25.363 24 27.1435 24 29Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <p class="pt-2 ps-2">Group Reading</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="card mini-card rounded d-flex flex-row pt-2 mb-3">
+            <span class="ps-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#09B451" />
+                <g clip-path="url(#clip0_0_310)">
+                  <path
+                    d="M9.5 12.2419C10.8275 11.6869 12.731 11.0884 14.582 10.9024C16.577 10.7014 18.269 10.9969 19.25 12.0304V26.6494C17.8475 25.8544 16.07 25.7449 14.4305 25.9099C12.6605 26.0899 10.8755 26.6014 9.5 27.1264V12.2419ZM20.75 12.0304C21.731 10.9969 23.423 10.7014 25.418 10.9024C27.269 11.0884 29.1725 11.6869 30.5 12.2419V27.1264C29.123 26.6014 27.3395 26.0884 25.5695 25.9114C23.9285 25.7449 22.1525 25.8529 20.75 26.6494V12.0304ZM20 10.6744C18.5225 9.40394 16.3805 9.21494 14.4305 9.40994C12.1595 9.63944 9.8675 10.4179 8.4395 11.0674C8.30847 11.127 8.19736 11.2231 8.11943 11.3441C8.0415 11.4651 8.00004 11.606 8 11.7499V28.2499C8.00003 28.3754 8.03156 28.4989 8.09168 28.6091C8.1518 28.7192 8.23859 28.8125 8.34412 28.8804C8.44964 28.9483 8.57052 28.9887 8.69567 28.9978C8.82083 29.0069 8.94627 28.9844 9.0605 28.9324C10.3835 28.3324 12.515 27.6109 14.5805 27.4024C16.694 27.1894 18.4655 27.5329 19.415 28.7179C19.4853 28.8055 19.5743 28.8762 19.6756 28.9248C19.7768 28.9734 19.8877 28.9986 20 28.9986C20.1123 28.9986 20.2232 28.9734 20.3244 28.9248C20.4257 28.8762 20.5147 28.8055 20.585 28.7179C21.5345 27.5329 23.306 27.1894 25.418 27.4024C27.485 27.6109 29.618 28.3324 30.9395 28.9324C31.0537 28.9844 31.1792 29.0069 31.3043 28.9978C31.4295 28.9887 31.5504 28.9483 31.6559 28.8804C31.7614 28.8125 31.8482 28.7192 31.9083 28.6091C31.9684 28.4989 32 28.3754 32 28.2499V11.7499C32 11.606 31.9585 11.4651 31.8806 11.3441C31.8026 11.2231 31.6915 11.127 31.5605 11.0674C30.1325 10.4179 27.8405 9.63944 25.5695 9.40994C23.6195 9.21344 21.4775 9.40394 20 10.6744Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_310">
+                    <rect width="24" height="24" fill="white" transform="translate(8 8)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p class="pt-2 ps-2">10k Course</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="card mini-card rounded d-flex flex-row pt-2 mb-3">
+            <span class="ps-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#09B451" />
+                <g clip-path="url(#clip0_0_315)">
+                  <path
+                    d="M18.5427 31.91C16.4022 31.6325 14.1987 30.7145 12.5937 29.4297C8.98023 26.5467 7.33998 21.992 8.27748 17.4687C8.67948 15.5157 9.72648 13.4607 11.0667 11.9802C12.054 10.8691 13.2446 9.95697 14.5745 9.29297C16.34 8.39822 18.0275 7.99622 20.0195 7.99622C21.449 7.99622 22.598 8.18372 23.9142 8.63297C25.6434 9.2261 27.2144 10.2062 28.5074 11.4985C29.8004 12.7908 30.7812 14.3613 31.3752 16.0902C32.0787 18.1527 32.207 20.348 31.7577 22.5237C31.3985 24.2427 30.4722 26.1762 29.3322 27.5742C28.8635 28.1525 27.785 29.1837 27.2187 29.6015C25.5247 30.8596 23.5324 31.6552 21.4377 31.91C20.8205 31.988 19.1405 31.9842 18.5435 31.91H18.5427ZM21.8127 30.9065C24.7365 30.4164 27.3458 28.7851 29.0667 26.3712C31.094 23.5235 31.637 19.703 30.4925 16.3715C30.2232 15.59 29.555 14.2857 29.0667 13.598C28.5237 12.8285 27.1797 11.4807 26.4065 10.9377C25.6565 10.4067 24.3792 9.76172 23.5077 9.47672C21.9346 8.95407 20.2641 8.79157 18.6198 9.00122C16.9754 9.21087 15.3991 9.78732 14.0075 10.688C12.6981 11.5481 11.5788 12.6673 10.7187 13.9767C9.81831 15.3676 9.24198 16.9431 9.03233 18.5867C8.82267 20.2303 8.98506 21.9001 9.50748 23.4725C9.79623 24.3432 10.4412 25.625 10.9685 26.375C11.5152 27.1445 12.8592 28.4922 13.6287 29.0352C14.3202 29.5197 15.6207 30.1872 16.4022 30.461C18.1417 31.0519 20 31.205 21.8127 30.9065ZM17.6562 26.8827C17.0955 26.7982 16.5575 26.6015 16.0745 26.3045C15.641 26.027 12.3672 22.82 12.2075 22.5192C12.0237 22.1757 12.344 21.5502 12.8015 21.359L13.016 21.269L12.356 20.597C11.993 20.2257 11.6487 19.8312 11.594 19.7217C11.465 19.472 11.4612 18.9365 11.582 18.698C11.633 18.6005 11.7537 18.452 11.8475 18.3695C12.008 18.2367 12.023 18.1895 12.008 17.8535C11.9885 17.5565 12.0155 17.4395 12.1445 17.2167C12.332 16.8965 12.719 16.6812 13.0977 16.6775C13.3085 16.6775 13.3632 16.6505 13.4532 16.4937C13.688 16.0835 14.3592 15.935 14.8715 16.1855L15.149 16.3182L15.2855 16.1855C15.473 16.0137 15.848 15.8615 16.094 15.8615C16.586 15.8615 17.2812 16.4277 17.2812 16.826C17.2812 17.3022 16.8477 17.3847 16.418 16.9902C16.133 16.7247 15.9882 16.697 15.8712 16.8845C15.8127 16.9745 15.953 17.1425 16.793 17.99C17.633 18.8337 17.7852 19.0137 17.7852 19.1735C17.7786 19.2959 17.7265 19.4115 17.6391 19.4975C17.5517 19.5835 17.4353 19.6338 17.3127 19.6385C17.1605 19.6385 16.9107 19.4195 15.758 18.2712C14.582 17.099 14.3675 16.9115 14.2737 16.9707C14.0195 17.1312 14.1057 17.2482 15.4805 18.6267C16.2267 19.3767 16.8402 20.0405 16.8402 20.1035C16.8402 20.2325 16.7232 20.471 16.6257 20.5332C16.5458 20.5683 16.4587 20.5845 16.3715 20.5805C16.211 20.5842 15.965 20.3615 14.657 19.0572C13.3445 17.7522 13.1097 17.5415 13.016 17.6C12.758 17.7642 12.8442 17.8775 14.3405 19.3812C15.1572 20.198 15.8405 20.9285 15.86 21.0065C15.9027 21.1475 15.809 21.3935 15.6845 21.479C15.6019 21.5141 15.5124 21.5302 15.4227 21.5262C15.2622 21.5262 15.0597 21.3507 13.9775 20.2685C12.9342 19.2252 12.692 19.0107 12.5592 19.0227C12.1842 19.0655 12.317 19.2335 14.2542 21.1752C15.9342 22.859 16.1487 23.0975 16.1487 23.273C16.1504 23.3374 16.1359 23.4012 16.1066 23.4586C16.0772 23.516 16.034 23.5651 15.9807 23.6015C15.68 23.84 15.563 23.7852 14.8047 23.051C14.4177 22.6797 14.0195 22.3205 13.9137 22.2537C13.7225 22.1367 13.238 22.0857 13.148 22.1795C13.1165 22.2065 13.8312 22.961 14.7342 23.855C16.238 25.343 16.4097 25.496 16.8515 25.7067C17.2584 25.9094 17.7066 26.0155 18.1612 26.0168C18.6158 26.0181 19.0646 25.9145 19.4727 25.7142C20.7342 25.1127 21.434 23.6517 21.0897 22.3272C20.918 21.6672 20.7027 21.3507 19.8357 20.456C18.836 19.4322 18.605 19.151 18.359 18.659C18.0852 18.1085 17.9682 17.573 17.9682 16.9047C17.9682 16.1817 18.0425 15.854 18.3627 15.1782C18.6672 14.534 19.304 13.8582 19.9332 13.5102C21.1677 12.8225 22.793 12.881 23.972 13.6512C24.2067 13.8035 25.0542 14.6007 26.1087 15.659C27.6755 17.2295 27.8547 17.4327 27.8547 17.612C27.8547 18.038 27.5067 18.5105 27.1205 18.608C26.9757 18.647 27.0035 18.686 27.6597 19.3542C28.0422 19.7412 28.3977 20.159 28.4525 20.288C28.6362 20.7297 28.5537 21.1587 28.2177 21.5105C28.046 21.6905 28.0227 21.7527 28.0182 22.112C28.0145 22.4285 27.9792 22.5612 27.854 22.7412C27.7551 22.8876 27.6226 23.0083 27.4676 23.0933C27.3126 23.1782 27.1396 23.2249 26.963 23.2295C26.7207 23.2295 26.6742 23.2527 26.5527 23.4365C26.279 23.8587 25.568 24.0065 25.1075 23.7335L24.8772 23.597L24.713 23.7575C24.35 24.1055 23.7635 24.152 23.3187 23.867C22.9595 23.6405 22.694 23.324 22.694 23.1245C22.694 22.949 22.9482 22.6595 23.1042 22.6595C23.2527 22.6595 23.4522 22.7765 23.6787 22.988C23.9052 23.2025 24.101 23.2025 24.1317 22.9842C24.1475 22.8672 23.96 22.6445 23.2017 21.8825C22.4045 21.0777 22.2522 20.894 22.2522 20.738C22.2504 20.6509 22.2665 20.5643 22.2995 20.4837C22.3857 20.3547 22.628 20.2647 22.7757 20.3037C22.8537 20.3232 23.5137 20.933 24.2367 21.6552C24.9635 22.382 25.6002 22.9752 25.6587 22.9752C25.8192 22.9752 25.9242 22.8147 25.85 22.6782C25.8147 22.616 25.2012 21.9867 24.4902 21.2757C23.3772 20.1665 23.1972 19.9595 23.1972 19.7952C23.1936 19.7068 23.2097 19.6186 23.2445 19.5372C23.3112 19.4397 23.5452 19.3227 23.678 19.3227C23.7365 19.3227 24.4707 20.006 25.3107 20.8422C26.8497 22.3737 26.963 22.4592 27.1235 22.2057C27.182 22.112 26.9712 21.8735 25.6662 20.5647C24.3185 19.2132 24.1392 19.01 24.1392 18.8345C24.1392 18.7137 24.194 18.5885 24.2802 18.5105C24.5652 18.2412 24.6515 18.296 26.0382 19.6745C27.3507 20.9832 27.4677 21.0687 27.6282 20.819C27.6867 20.7252 27.4212 20.4365 25.7922 18.803C24.0185 17.0217 23.8902 16.877 23.8902 16.67C23.8902 16.3572 24.0702 16.2087 24.4175 16.2327C24.4797 16.2365 24.8547 16.553 25.2417 16.9317C25.6325 17.3105 26.054 17.666 26.1792 17.7207C26.4252 17.822 26.7102 17.8377 26.8317 17.7597C26.9487 17.6855 23.7065 14.4942 23.285 14.2715C22.9236 14.0764 22.5261 13.9574 22.117 13.9217C21.7078 13.886 21.2957 13.9344 20.906 14.064C20.5163 14.1935 20.1572 14.4015 19.8509 14.675C19.5445 14.9485 19.2974 15.2819 19.1247 15.6545C18.9215 16.088 18.8945 16.217 18.8667 16.7757C18.8435 17.303 18.863 17.4672 18.9762 17.8032C19.1795 18.401 19.355 18.647 20.2655 19.577C21.2502 20.585 21.4377 20.8152 21.6875 21.3545C22.391 22.8545 22.094 24.5892 20.9337 25.745C20.051 26.6315 18.848 27.0455 17.6562 26.882V26.8827Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_315">
+                    <rect width="24" height="24" fill="white" transform="translate(8 8)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p class="pt-2 ps-2">10k Course</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- icon sec end -->
+
+  <!-- Carousel sec -->
+
+  <section id="Carousel" class="carousel-one">
+    <div class="container mb-5">
+      <div class="d-flex justify-content-between mb-5">
+        <h3>Choose favorite course from top categories</h3>
+        <h5>See all</h5>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 ">
+          <div class="owl-carousel owl-theme d-flex justify-content-between">
+
+            <div class="card">
+              <div class="image-container">
+                <img class="img-fluid" class="img-fluid" src="images/image 8.png" alt="">
+                <div class="text-overlay">
+                  <h3>Marketing</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card">
+              <div class="image-container">
+                <img class="img-fluid" src="images/design.png" alt="">
+                <div class="text-overlay">
+                  <h3>Design</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card">
+              <div class="image-container">
+                <img class="img-fluid" src="images/programming.png" alt="">
+                <div class="text-overlay">
+                  <h3>Programming</h3>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="image-container">
+                <img class="img-fluid" src="images/design.png" alt="">
+                <div class="text-overlay">
+                  <h3>Technology</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Carousel sec end -->
+  <!-- most Popular courses -->
+  <section id="popular-courses">
+    <div class="container">
+      <div class="d-flex justify-content-between mb-5">
+        <h3>Most Popular Courses</h3>
+        <button class="btn btn-color text-light rounded-pill"><span><a href="">
+              <svg width="15" height="12" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.25 1.06255L9.00003 10.4376L2.75003 1.06255C2.66795 0.939437 2.56243 0.833694 2.43949 0.75136C2.31654 0.669026 2.17859 0.611714 2.0335 0.582696C1.88841 0.553678 1.73902 0.553523 1.59387 0.582238C1.44872 0.610952 1.31064 0.667975 1.18753 0.750051C1.06441 0.832128 0.958669 0.937649 0.876335 1.06059C0.794002 1.18353 0.73669 1.32149 0.707672 1.46658C0.678653 1.61167 0.678497 1.76106 0.707211 1.90621C0.735926 2.05136 0.79295 2.18944 0.875026 2.31255L7.96003 12.9401C8.07418 13.1112 8.22883 13.2516 8.41025 13.3487C8.59168 13.4458 8.79426 13.4966 9.00003 13.4966C9.20579 13.4966 9.40838 13.4458 9.5898 13.3487C9.77122 13.2516 9.92587 13.1112 10.04 12.9401L17.125 2.31255C17.2071 2.18944 17.2641 2.05136 17.2928 1.90621C17.3216 1.76106 17.3214 1.61167 17.2924 1.46658C17.2634 1.32149 17.2061 1.18353 17.1237 1.06059C17.0414 0.937649 16.9356 0.832128 16.8125 0.750051C16.6894 0.667975 16.5513 0.610952 16.4062 0.582238C16.261 0.553523 16.1116 0.553678 15.9666 0.582696C15.8215 0.611714 15.6835 0.669026 15.5606 0.75136C15.4376 0.833694 15.3321 0.939437 15.25 1.06255Z"
+                  fill="white" />
+              </svg>
+
+            </a></span>Sort By</button>
+      </div>
+
+      <!--  -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card1.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Learn Marketing from Top Instructors.</h3>
+                  <a href="">
+                    <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card2.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Front-end development is not hard as you think</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card3.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Everrything you need to know in UX</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card4.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Learn photography with ease</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card5.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Be a pro in data analysis</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card6.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Ethical Harking is not hard as you think </h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+
+
+    </div>
+  </section>
+  <!-- most Popular courses end -->
+
+
+  <!-- New skill Carousel -->
+  <section id="newSkill">
+    <div class="container mb-5">
+
+      <div class=" row d-flex justify-content-start mb-5">
+        <h3>Learn A New skill In Two Hours</h3>
+      </div>
+      <!--  -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card2.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">All you need in Business Strategy</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card4.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">The amazing hack in Figma prototyping</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded">
+              <img class="card-img-top img-fluid " src="images/card3.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pt-2">
+                  <h3 class="fs-4">Introduction to basic game developement</h3>
+                  <a href=""> <img src="images/star.svg" alt=""></a><span class="ps-2">4.5</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                  <p>6 weeks <a href="#" class="ps-3">
+                      <img src="images/contact-logo.svg" alt=""></a> <span>1.5K students</span></p>
+                  <h5 class="text-color">30.5$</h5>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </section>
+  <!-- New skill Carousel end -->
+
+
+  <!-- job opportunity -->
+  <section id="job-opportunity">
+    <div class="container mt-5">
+      <div class="row mb-5">
+        <h3>We Bring The Good Education To Life</h3>
+      </div>
+      <div class="row d-flex">
+        <div class="col-lg-5">
+          <div class="sideimage  ">
+            <img class="img-fluid " src="./images/let-your.svg" alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="sideText ">
+            <h2 class="pb-5">Let Your Education Do The Walking</h2>
+            <div class="items d-flex mb-3 ">
+              <img src="images/ebook.svg" alt="">
+              <p class="ps-3 pt-2">Free E-book, Videos and kits</p>
+
+            </div>
+
+
+            <div class="items d-flex mb-3 ">
+              <img src="images/learn.svg" alt="">
+              <p class="ps-3 pt-2">Learn at your own pace</p>
+
+            </div>
+
+            <div class="items d-flex mb-3 ">
+              <img src="images/colla.svg" alt="">
+              <p class="ps-3 pt-2">Collaborate with different learners around the globe</p>
+
+            </div>
+
+            <div class="items d-flex ">
+              <img src="images/top.svg" alt="">
+              <p class="ps-3 pt-2">Top instructors around the globe</p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- job opportunity end-->
+
+
+  <!-- Review sec -->
+  <section id="Review" class="review-two">
+    <div class="container mt-5 mb-5">
+      <div class="row  mb-5">
+        <h3 class="text-center mb-5 mt-5">Review</h3>
+        <div class="col-lg-4">
+          <h2>What Our <span><img class="ms-std" src="images/student.svg" alt=""></span> Say About Us</h2>
+          <div class="scroll d-flex justify-content-center align-items-center">
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8">
+          <!--  -->
+          <!--  -->
+          <div class="owl-carousel owl-theme d-flex justify-content-between">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded p-3 ">
+              <div class="profile d-flex ps-2 pb-3 pt-3">
+                <img class="img-fluid w-25" src="./images/pro1.png" alt="">
+                <div class="title ps-4">
+                  <h5>Mohan Jumah</h5>
+                  <h6 class="text-color">Senior Developer</h6>
+                </div>
+
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa
+                elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet
+                venenatis </p>
+            </div>
+
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded p-3 ">
+              <div class="profile d-flex ps-2 pb-3 pt-3">
+                <img class="img-fluid w-25" src="./images/pro1.png" alt="">
+                <div class="title ps-4">
+                  <h5>John Mark</h5>
+                  <h6 class="text-color">Data Analyst</h6>
+                </div>
+
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa
+                elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet
+                venenatis </p>
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+          </div>
+
+          <!--  -->
+
+        </div>
+        <!--  -->
+        
+        <div class="row ">
+          <h3 class="py-4">Meet our instructors</h3>
+          <div class="col-12 col-lg-4">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded" style="width: 20.5rem;">
+              <div class="profile text-center py-4">
+                <img class="pb-2 img-fluid" src="./images/pro3.png" alt="">
+                <h5 class="pb-2">John Mark</h5>
+                <h6 class="pb-4 text-color">Senior Developer</h6>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, illo"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded" style="width: 20.5rem;">
+              <div class="profile text-center py-4">
+                <img class="pb-2 img-fluid" src="./images/pro4.png" alt="">
+                <h5 class="pb-2">John Mark</h5>
+                <h6 class="pb-4 text-color">Senior Developer</h6>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, illo"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="card border-0 shadow-sm  mb-5 bg-white rounded" style="width: 20.5rem;">
+              <div class="profile text-center py-4">
+                <img class="pb-2 img-fluid" src="./images/pro5.png" alt="">
+                <h5 class="pb-2">John Mark</h5>
+                <h6 class="pb-4 text-color">Senior Developer</h6>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, illo"</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Review sec end -->
+
+  <!-- call sec -->
+  <section id="call" class="bg-call-sec">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-5">
+          <div class="cardimge w-75 h-75 d-none d-sm-block">
+            <img class="img-fluid" src="./images/job.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class="title pt-5">
+            <h3 class="display-6 text-white fw-bold ">You Don't Have To See The Whole Staircase Just Take The First
+              Step</h3>
+            <p class="text-white text-wrap mt-4 ">Lorem ipsum m ipsum dolor sit amet, consectetur adipisicing elit. Quib
+              dolor sit amet, consectetur adipisicing elit. Quibusdam, expedita!</p>
+            <div class="col-sm-6 mb-5 mb-lg-0 text-center">
+              <button class="btn btn-lg btn-color text-light mt-5 me-4 focus-none">Get Started</button>
+              <button class="btn btn-lg btn-light text-color mt-5 p-2 focus-none">Place a call</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- call sec end -->
+
+  <!-- footer sec -->
+  <footer>
+    <div class="container-fluid footer">
+      <div class="row flex-column-reverse flex-lg-row">
+        <div class="col-lg-3 pt-3 p-lg-0">
+          <div>
+            <div class="logo text-left">
+              <h3 class="text-left">WiSchool</h3>
+              <p class="d-none d-sm-block">
+                we are not here to sell you products.we sell value through our
+                expertise
+              </p>
+            </div>
+
+            <div class="socialLinks ps-sm-0 ps-lg-5">
+              <ul class="d-flex">
+                <li>
+                  <a href="#" >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 pt-5 p-lg-0" >
+          <div class="row">
+            <div class="col-3 col-lg-3 ">
+              <div class="footer-list">
+                <ul class="navbar-collapse">
+                  <li class="nav-item">
+                    <a class="nav-link text-left" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-left " href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-left" href="#">Training</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-left" href="#">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-left" href="#">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-3 col-lg-2">
+              <div class="footer-list">
+                <ul class="navbar-collapse justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Solution</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 col-lg-3">
+              <div class="footer-list">
+                <ul class="navbar-collapse justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Place A Call</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Email</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Wischool@Gmail.Cpm</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-0 col-lg-2 d-none d-sm-block d-md-block">
+              <div class="footer-list">
+                <a class="nav-link" href="#">job Opening</a>
+                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="#">Research</a>
+              </div>
+            </div>
+            <div class="col-lg-2 d-none d-sm-block d-md-block">
+              <div class="footer-list">
+                <ul class="navbar-collapse justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Uk Privacy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3 p-lg-0">
+        <div class="col-12 subscribe">
+          <h3 class="text-light text-center text-left">
+            Subscribe to get latest updates
+          </h3>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-5">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter your Email" aria-describedby="basic-addon2" />
+              <span class="input-group-text btn-color text-light" id="basic-addon2">Subscribe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer sec end -->
+  <!-- owlCarousel script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- custom script  -->
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
